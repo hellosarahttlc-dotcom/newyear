@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於愛情的味覺測驗</title>
     
-    <!-- Open Graph Tags (LINE/FB 分享縮圖) -->
+    <!-- Open Graph Tags (LINE/FB 分享縮圖設定) -->
     <meta property="og:title" content="關於愛情的味覺測驗" />
     <meta property="og:description" content="測測看妳渴望什麼樣的愛情？領取專屬妳的愛情開運年菜！" />
     <meta property="og:image" content="https://i.postimg.cc/76Lk57Z0/Red-Hearts-Valentine-s-Day-Promo-Love-Instagram-Post.png" />
@@ -35,7 +35,7 @@
             background-color: var(--deep-bg);
             color: var(--cream-white);
             margin: 0;
-            padding: 15px; 
+            padding: 10px; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -49,7 +49,7 @@
             width: 100%;
             max-width: 360px;
             background: var(--primary-red);
-            padding: 40px 20px; 
+            padding: 40px 15px; 
             border-radius: 40px;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             text-align: center;
@@ -72,6 +72,7 @@
             display: flex; 
             flex-direction: column; 
             align-items: center; 
+            justify-content: center;
         }
 
         @keyframes fadeIn { 
@@ -87,7 +88,6 @@
             font-weight: 700; 
             line-height: 1.2;
             width: 100%;
-            text-wrap: balance;
         }
         
         .subtitle { 
@@ -97,7 +97,6 @@
             letter-spacing: 2px; 
             opacity: 0.95;
             width: 100%;
-            text-wrap: balance;
         }
         
         .home-wish { 
@@ -119,13 +118,12 @@
         
         h2 {
             font-size: clamp(1rem, 4.5vw, 1.15rem);
-            margin: 0 auto 35px auto; 
+            margin: 0 auto 30px auto; 
             font-weight: 700; 
             color: var(--cream-white);
             line-height: 1.6; 
             text-align: center; 
             width: 100%;
-            text-wrap: balance; 
         }
 
         /* 第四題單行特別控制 */
@@ -139,12 +137,12 @@
             width: 100%; 
             display: flex; 
             flex-direction: column; 
-            gap: 14px; 
+            gap: 12px; 
         }
         
         .options button {
             width: 100%; 
-            padding: 15px 16px; 
+            padding: 14px 12px; 
             border: none; 
             border-radius: var(--sketch-radius);
             background: var(--cream-white); 
@@ -154,56 +152,53 @@
             font-weight: 700;
             cursor: pointer; 
             transition: all 0.2s ease;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             line-height: 1.4; 
-            text-wrap: balance;
         }
         
         .options button:active { background-color: var(--dark-red); color: var(--cream-white); transform: scale(0.97); }
 
-        /* 結果頁樣式修復：確保不溢出且對齊美觀 */
+        /* 結果頁佈局核心修正 */
         .result-dish-box {
             background: var(--cream-white); 
             color: var(--title-red);
-            padding: 12px 25px; 
+            padding: 10px 20px; 
             border-radius: var(--sketch-radius);
-            margin: 5px 0 25px 0; 
+            margin: 5px 0 20px 0; 
             display: inline-block;
             box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-            max-width: 95%;
+            max-width: 90%;
         }
         
         .result-dish { 
-            font-size: 1.55rem; 
+            font-size: 1.5rem; 
             font-weight: 700; 
             letter-spacing: 3px; 
             margin: 0; 
-            word-break: keep-all;
         }
         
         .result-desc { 
             font-size: 0.95rem; 
-            margin-bottom: 25px; 
+            margin-bottom: 20px; 
             text-align: center; 
             color: var(--cream-white); 
             line-height: 1.8; 
             padding: 0 5px;
             width: 100%;
-            display: block;
-            word-break: break-word; /* 避免文字衝出邊界 */
+            word-break: break-word; /* 允許英文斷行，中文不強制 keep-all */
         }
         
         .result-quote { 
             font-style: italic; 
             color: var(--title-red); 
             margin: 15px 0; 
-            padding: 22px 15px; 
-            border-top: 1.5px dashed rgba(252, 249, 247, 0.25); 
-            border-bottom: 1.5px dashed rgba(252, 249, 247, 0.25); 
+            padding: 20px 15px; 
+            border-top: 1.5px dashed rgba(252, 249, 247, 0.3); 
+            border-bottom: 1.5px dashed rgba(252, 249, 247, 0.3); 
             font-weight: 700; 
             font-size: 1.05rem; 
             line-height: 1.7; 
-            background: rgba(252, 249, 247, 0.04); 
+            background: rgba(252, 249, 247, 0.05); 
             border-radius: 15px;
             width: 100%;
             word-break: break-word;
@@ -213,7 +208,7 @@
             background: var(--title-red); 
             color: var(--cream-white); 
             border: none;
-            padding: 16px 50px; 
+            padding: 15px 45px; 
             border-radius: 40px; 
             font-family: 'Zen Maru Gothic', sans-serif;
             font-size: 1.05rem; 
@@ -234,7 +229,7 @@
             letter-spacing: 1.5px; 
             width: 100%;
             line-height: 1.6;
-            text-align: center; /* 確保絕對置中 */
+            text-align: center; /* 置中祝福 */
             display: block;
         }
     </style>
@@ -255,7 +250,7 @@
 
     <!-- 結果頁 -->
     <div class="page" id="p-result">
-        <p style="font-size: 0.8rem; margin-bottom: 6px; color: var(--title-red); letter-spacing: 2px; font-weight: 700;">你渴望的關係風格是</p>
+        <p style="font-size: 0.8rem; margin-bottom: 4px; color: var(--title-red); letter-spacing: 2px; font-weight: 700;">你渴望的關係風格是</p>
         <div class="result-dish-box"><div class="result-dish" id="res-title"></div></div>
         <div class="result-desc" id="res-desc"></div>
         <div class="result-quote" id="res-quote"></div>
@@ -342,9 +337,7 @@
 
         dishCounts.forEach((target, index) => {
             const dist = Math.sqrt(
-                Math.pow(userA - target[0], 2) +
-                Math.pow(userB - target[1], 2) +
-                Math.pow(userC - target[2], 2)
+                Math.pow(userA - target[0], 2) + Math.pow(userB - target[1], 2) + Math.pow(userC - target[2], 2)
             );
             if (dist < minDistance) {
                 minDistance = dist;
@@ -375,9 +368,9 @@
         const res = resultData[resIdx];
         document.getElementById('res-title').innerText = res.title;
         
-        // 蔣瑀要求：句號「。」或逗號「，」後換行
+        // 核心換行邏輯修正：只要遇到標點符號就換行，並移除多餘空白
         const formatText = (str) => {
-            return str.replace(/[。，]/g, (match) => match + '<br>');
+            return str.trim().replace(/[。，]/g, (match) => match + '<br>');
         };
         
         document.getElementById('res-desc').innerHTML = formatText(res.desc);
